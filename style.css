@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+
+}
+
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+
+
+/* ### Primary Colors */
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    /* Gradients 
+        BACKGROUND
+    */
+    --Light-slate-blue: rgb(120, 87, 255);
+    --Light-royal-blue: rgb(46, 43, 233); 
+    /* CIRCLE */
+
+    --Violet-blue: rgb(78, 33, 202);
+    --Persian-blue: rgba(36, 33, 202, 0);
+    /* NEUTRAL */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+/* MOBILE FIRST */
+@media only screen and (max-width: 500px) {
+    .result-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 356px;
+        border: solid 1px black;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 20px 40px;
+        background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgb(46, 43, 233) 80%); 
+        color: var(--White);
+        /* rgba(120,87,255,1) */
+    }
+
+    .container-radius{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 143px;
+        height: 143px;
+        border-radius: 100%;
+        margin-top: 30px;
+        background: linear-gradient(180deg,rgb(46, 43, 233) 0%, rgb(120, 87, 255) 250%)
+    
+    }
+
+    .container-radius p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 60px;
+        font-weight: 700;
+    }
+    .container-radius p span{
+        margin: auto 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--Light-lavender);
+    }
+    .great{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .great h2{
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .great p{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 8px;
+    }
+    .summary-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .summary-section #summary{
+       margin: 15px 250px 15px 0px;
+       font-size: 20px;
+       font-weight: 700;
+    }
+
+    .container-summary{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 320px;
+        height: 53px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+    
+
+    .container-summary #icon{
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        overflow: hidden;
+        position: relative;
+
+    }
+
+    .container-summary #icon p{
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    
+    .container-summary p, span{
+        margin-right: 15px;
+    }
+
+    .container-summary p span{
+        font-weight: 700;
+    }
+    #reaction{
+        background-color: #FFF6F5;
+    }
+    #memory{
+        background-color: #FFFBF2;
+    }
+    #verbal{
+        background-color: #F2FBFA;
+    }
+    #visual{
+        background-color: #F3F3FD;
+    }
+
+    button{
+        width: 320px;
+        height: 53px;
+        margin-top: 25px;
+        border-radius: 30px;
+        border: none;
+        background-color: var(--Dark-gray-blue);
+    }
+
+    button a{
+        text-decoration: none;
+        color: var(--White);
+    }
+
+
+
+
+
+}
+
+
+/* FOOTER */
+.attribution { font-size: 11px;
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
